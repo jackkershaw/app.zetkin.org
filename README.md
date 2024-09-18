@@ -18,10 +18,10 @@ Also see [TESTING.md](./TESTING.md) for details about automated testing.
 
 ## Instructions
 
-### Windows
+### Common (Mac/Windows/Linux)
 
 1. Fork zetkin/app.zetking.org into your personal GitHub account.
-1. Install Git for Windows from https://git-scm.com/download/win
+1. Install Git for your OS from https://git-scm.com/download/
 2. Generate an SSH key, for example with
    Git Gui / Help / Show SSH Key / Generate Key
 3. Add your key to GitHub by copying the public part of it to
@@ -31,22 +31,16 @@ Also see [TESTING.md](./TESTING.md) for details about automated testing.
    installation of Visual Studio Code to your GitHub account, and then clone
    your fork from GitHub. Note that you will be prompted for the passphrase of
    your private key if you chose to use one when you created your SSH Key.
-
-### Common
-
-Install all the dependencies using [`yarn` (Classic)](https://classic.yarnpkg.com):
-
+6. Install all the dependencies using [`yarn` (Classic)](https://classic.yarnpkg.com):
 ```
 $ yarn install
 ```
-
-Then start the devserver:
-
+7. Start the devserver:
 ```
 $ yarn devserver
 ```
 
-You should now be able to access the app on http://localhost:3000. It will
+8. You should now be able to access the app on http://localhost:3000. It will
 communicate with the Zetkin API running on our public development server.
 
 ### Docker
