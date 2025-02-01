@@ -13,11 +13,13 @@ import messageIds from '../l10n/messageIds';
 interface ViewFolderSubtitleProps {
   numFolders: number;
   numViews: number;
+  numJoinForms: number;
 }
 
 const ViewFolderSubtitle: FC<ViewFolderSubtitleProps> = ({
   numFolders,
   numViews,
+  numJoinForms,
 }) => {
   const messages = useMessages(messageIds);
 
@@ -40,6 +42,12 @@ const ViewFolderSubtitle: FC<ViewFolderSubtitleProps> = ({
         {
           icon: <InsertDriveFileOutlined />,
           label: messages.folder.summary.viewCount({ count: numViews }),
+        },
+        {
+          icon: <InsertDriveFileOutlined />,
+          label: messages.folder.summary.viewJoinFormCount({
+            count: numJoinForms,
+          }),
         },
       ]}
     />

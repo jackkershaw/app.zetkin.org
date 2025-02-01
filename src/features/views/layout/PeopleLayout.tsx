@@ -41,6 +41,7 @@ const PeopleLayout: React.FunctionComponent<PeopleLayoutProps> = ({
           {(data) => (
             <ViewFolderSubtitle
               numFolders={data.folders}
+              numJoinForms={data.joinForms}
               numViews={data.views}
             />
           )}

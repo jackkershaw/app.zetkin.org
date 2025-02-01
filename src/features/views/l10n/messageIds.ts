@@ -335,6 +335,9 @@ export default makeMessages('feat.views', {
       viewCount: m<{ count: number }>(
         '{count, plural, =1 {1 list} other {# lists}}'
       ),
+      viewJoinFormCount: m<{ count: number }>(
+        '{count, plural, =1 {1 join form} other {# join forms}}'
+      ),
     },
   },
   footer: {

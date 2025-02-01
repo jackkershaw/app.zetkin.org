@@ -36,6 +36,7 @@ const FolderLayout: React.FunctionComponent<FolderLayoutProps> = ({
               {(data) => (
                 <ViewFolderSubtitle
                   numFolders={data.folders}
+                  numJoinForms={data.joinForms}
                   numViews={data.views}
                 />
               )}
